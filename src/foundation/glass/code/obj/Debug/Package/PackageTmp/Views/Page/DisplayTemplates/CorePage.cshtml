@@ -1,0 +1,14 @@
+﻿@using Glass.Mapper.Sc.Web.Mvc
+@model Common.Foundation.Glass.Models.Core.CorePage
+
+
+<div class="container">
+    <div class="widget page-overview">
+        <div class="widget-header">
+            @Html.Glass().Editable(o => o.Title, new { @class = "title" })
+        </div>
+        <div class="widget-content">
+           @Html.Glass().Editable(m => m.MainText)
+        </div>
+    </div>
+</div>

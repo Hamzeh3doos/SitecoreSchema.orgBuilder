@@ -1,0 +1,24 @@
+﻿---
+ID: "deaf5093-5d05-42af-a1a5-acfcfd66879d"
+Parent: "5c8f8475-1f24-41bd-903f-636412d0a7fd"
+Template: "5c8f8475-1f24-41bd-903f-636412d0a7fd"
+Path: /sitecore/templates/Foundation/Glass/Rendering Parameters/Core Parameters/__Standard Values
+DB: master
+SharedFields:
+- ID: "0793dcff-0ee7-48ad-b9d4-ef1dd24eb59b"
+  Hint: Data Source
+  Value: 
+- ID: "3094d236-5985-4c4f-ae6a-e30740885532"
+  Hint: Caching
+  Value: 0|0|0|0|0|0|0|0
+- ID: "e42027f4-766d-45a7-8cf4-29e5c94326f7"
+  Hint: Placeholder
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20131104T111533

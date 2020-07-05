@@ -1,0 +1,31 @@
+﻿---
+ID: "3c11269f-d49f-4f56-9335-7470e0d2a1a3"
+Parent: "d725ccbb-2d73-4ac1-a153-673136236787"
+Template: "d725ccbb-2d73-4ac1-a153-673136236787"
+Path: /sitecore/templates/Foundation/Glass/Fields/Titles/__Standard Values
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0f7c5053-92e3-407d-976e-731ec70827a8"
+      Hint: BreadcrumbTitle
+      Value: $name
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140418T125126
+    - ID: "5512fcd1-f666-4712-8795-9a43e6ea3632"
+      Hint: ShortTitle
+      Value: $name
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "d46c6e59-3215-462f-8290-59ee5c523649"
+      Hint: Title
+      Value: $name

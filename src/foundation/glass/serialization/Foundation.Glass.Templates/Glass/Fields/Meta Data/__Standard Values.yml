@@ -1,0 +1,25 @@
+﻿---
+ID: "78a4cbb1-e462-4816-8eb0-e4e006e49d6e"
+Parent: "c94b548e-4114-4a06-8c15-c4e36d5737bb"
+Template: "c94b548e-4114-4a06-8c15-c4e36d5737bb"
+Path: /sitecore/templates/Foundation/Glass/Fields/Meta Data/__Standard Values
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0cbcd7f7-7ce1-4a93-a0ba-4c119792aa6a"
+      Hint: metatitle
+      Value: $name
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20140819T220514
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\ameagle

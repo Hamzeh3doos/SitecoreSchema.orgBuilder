@@ -1,0 +1,21 @@
+﻿<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
+  
+  <sitecore>
+    <foundation>
+      
+      <!--List all dlls that glass mapper should inspect-->
+      <glass>
+        <!--<map hint="YourAssemblyName" dll="YourAssemblyName" />-->
+      </glass>
+
+      
+      <!-- Optional - Custom Field Mappers - Extend AbstractSitecoreFieldMapper -->
+      <glassHandlers>
+        <!--<handler type="Namespace.Class.Implementing.AbstractSitecoreFieldMapper, YourAssemblyName" />-->
+      </glassHandlers>
+      
+      
+    </foundation>
+  </sitecore>
+
+</configuration>

@@ -1,0 +1,2 @@
+﻿Implemented for V4, but have not yet tested Custom Data Handlers... fingers crossed.
+See RegisterCustomDataHandlers() in GlassInstaller.cs

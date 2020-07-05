@@ -1,0 +1,19 @@
+﻿---
+ID: "b6188a22-957c-4158-9538-45713f0620cb"
+Parent: "9b3f2c31-b3ff-4c30-82fb-0d84a3830d4f"
+Template: "9b3f2c31-b3ff-4c30-82fb-0d84a3830d4f"
+Path: /sitecore/templates/Foundation/Glass/Models/Core Section/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20130927T160700

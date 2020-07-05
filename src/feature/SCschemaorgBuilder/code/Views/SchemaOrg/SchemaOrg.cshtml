@@ -1,0 +1,104 @@
+﻿@using SCschemaorg.feature.SCschemaorgBuilder.Models;
+@using SCschemaorg.feature.SCschemaorgBuilder
+@model SchemaViewModel
+
+@if (Model != null && Model.Scope != null && Model.Scope.SchemaProperties != null && Model.Scope.SchemaProperties.Count() > 0)
+{
+
+    @helper RenderSchema(IEnumerable<SchemaProperty> schemaProperties)
+    {
+
+        for (int i = 0; i < schemaProperties.Count(); i++)
+        {
+            var item = schemaProperties.ElementAt(i);
+
+            if (item.ItemScope)
+            {
+                if (!string.IsNullOrEmpty(item.ItemProp))
+                {
+                    <text>"@item.ItemProp":</text>
+                }
+
+                <text>{</text>
+
+                @RenderSchema(item.Properties)
+
+                if (i == schemaProperties.Count() - 1)//last item
+                {
+                    <text>}</text>
+                }
+                else
+                {
+                    <text>},</text>
+                }
+            }
+            else if (item.FieldType.Value == Constants.SchemaFieldTypes.Array)
+            {
+
+
+                if (!string.IsNullOrEmpty(item.FieldValue))
+                {
+                    <text>"@item.ItemProp":[</text>
+
+                    var values = item.FieldValue.Split('|');
+
+                    for (int j = 0; j < values.Length; j++)
+                    {
+                        var value = values.ElementAt(j);
+
+                        if (!string.IsNullOrEmpty(value))
+                        {
+                            if (j == values.Length - 1)//last item
+                            {
+                                <text> "@value"  </text>
+                            }
+                            else
+                            {
+                                <text> "@value",  </text>
+                            }
+                        }
+                    }
+
+                    if (i == schemaProperties.Count() - 1)//last item
+                    {
+                        <text>]</text>
+                    }
+                    else
+                    {
+                        <text>],</text>
+                    }
+
+                }
+
+            }
+            else
+            {
+
+                if (i == schemaProperties.Count() - 1)//last item
+                {
+                    if (!string.IsNullOrEmpty(item.FieldValue))
+                    {
+                        <text> "@item.ItemProp":"@item.FieldValue" </text>
+                    }
+                }
+                else
+                {
+                    if (!string.IsNullOrEmpty(item.FieldValue))
+                    {
+                        <text> "@item.ItemProp":"@item.FieldValue",</text>
+                    }
+                }
+            }
+        }
+
+
+
+    }
+    <script type="application/ld+json">
+        {
+        @RenderSchema(Model.Scope.SchemaProperties)
+        }
+
+    </script>
+
+}
