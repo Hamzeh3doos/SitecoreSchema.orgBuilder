@@ -1,0 +1,23 @@
+﻿# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.FileListAbsolute.txt
+*.cache
+
+
+
+# Build results
+
+
+**/[Bb]in
+**/Debug
+**/obj
+
+# Visual Studio Files
+.vs/
+
+# Solution Files
+packages
+node_modules
